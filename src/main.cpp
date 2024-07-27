@@ -22,7 +22,8 @@ void loop() {
     bmouse.move(x, y);
 
   }
-  int delay = random(1000000, 10000000);
+  int delay = random(1, 15);
+  delay = delay * 1000000;
   delayMicroseconds(delay);
   
 }
