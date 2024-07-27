@@ -1,7 +1,6 @@
 #include <Arduino.h>
 #include <BleMouse.h>
 
-
 // put function declarations here:
 
 BleMouse bmouse;
