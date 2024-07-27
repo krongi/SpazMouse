@@ -1,16 +1,10 @@
 #include <Arduino.h>
 #include <BleMouse.h>
-#include <BleKeyboard.h>
-#include <BLEDevice.h>
-#include <math.h>
+
 
 // put function declarations here:
 
-BLEDevice bluedev;
 BleMouse bmouse;
-BleKeyboard bkey;
-
-
 
 void setup() {
   // put your setup code here, to run once:
@@ -29,8 +23,8 @@ void loop() {
     bmouse.move(x, y);
 
   }
-
-  delayMicroseconds(5000000);
+  int delay = random(1000000, 10000000);
+  delayMicroseconds(delay);
   
 }
 
