@@ -1,8 +1,6 @@
 #include <Arduino.h>
 #include <BleMouse.h>
 
-// put function declarations here:
-
 BleMouse bmouse;
 
 void setup() {
@@ -20,11 +18,14 @@ void loop() {
   // put your main code here, to run repeatedly:
   if(bmouse.isConnected()){
     bmouse.move(x, y);
+    
 
   }
-  int delay = random(1, 15);
-  delay = delay * 1000000;
-  delayMicroseconds(delay);
+    int delay = random(1, 15);
+    Serial.print(delay);
+    Serial.print("\n");
+    delay = delay * 1000000;
+    delayMicroseconds(delay);
   
 }
 
